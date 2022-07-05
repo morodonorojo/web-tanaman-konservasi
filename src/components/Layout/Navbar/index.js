@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky z-50 top-0 w-full h-14 p-3 bg-slate-500 flex flex-row justify-between items-center">
+    <nav className="sticky z-50 top-0 w-full h-14 p-3 bg-beachbrown-900 flex flex-row justify-between items-center">
       <Link href="/" passHref>
         <div className="flex flex-row cursor-pointer">
           <div className="kkn-logo relative w-8 h-8 items-center">
