@@ -1,0 +1,30 @@
+{
+  "id": "a1405171-5042-4430-9c62-d0bd1c9c22ef",
+  "uid": "itaque-rem-quisquam",
+  "type": "plantdata",
+  "data": {
+    "plantName": "deploy strategic applications",
+    "plantNameLatin": "revolutionize value-added experiences",
+    "usage": [
+      {
+        "type": "paragraph",
+        "text": "Anim commodo voluptate tempor excepteur aute adipisicing consequat minim fugiat ex sunt officia voluptate excepteur. Reprehenderit aliquip ut laborum deserunt duis velit qui aliquip exercitation ad fugiat sunt. Voluptate voluptate sunt dolore cillum amet voluptate est deserunt sunt consequat fugiat commodo tempor.",
+        "spans": []
+      }
+    ],
+    "spread": [
+      {
+        "type": "paragraph",
+        "text": "Est voluptate ut ad. Sint nisi sint fugiat tempor. Ullamco ex est labore in tempor et cillum consequat do est dolor adipisicing.",
+        "spans": []
+      }
+    ],
+    "morphology": [
+      {
+        "type": "paragraph",
+        "text": "Ut occaecat magna id exercitation id anim mollit eu dolore ullamco pariatur eu eu ex.",
+        "spans": []
+      }
+    ]
+  }
+}

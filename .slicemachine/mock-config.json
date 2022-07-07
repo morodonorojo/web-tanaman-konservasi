@@ -1,0 +1,12 @@
+{
+  "slices": {
+    "ImageGallery": {
+      "default": {
+        "primary": {}
+      }
+    }
+  },
+  "_cts": {
+    "plantdata": {}
+  }
+}
