@@ -1,5 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
+
+import "swiper/css";
+import "swiper/css/pagination";
+
+import { PlantCard } from "../components/Card";
 
 export default function Home() {
   return (
@@ -13,14 +20,44 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <div className="w-full h-screen bg-gradient-to-bl from-[#B2FEFA] to-[#0ED2F7] flex flex-col justify-center items-center">
-          <h1 className="text-3xl text-white font-bold ">Coming Soon</h1>
-          <h1 className="text-1xl text-white font-bold ">
-            KKN-PPM UGM 2022 Moro Donorojo
-          </h1>
+      <section className="xl:container mx-auto w-full p-3">
+        <h1 className="text-3xl font-bold text-center text-forestgreen-900 mb-8">
+          Tanaman Konservasi di Pantai Ngiroboyo
+        </h1>
+        <div className="plant-list flex">
+          <Swiper
+            spaceBetween={10}
+            slidesPerView={1}
+            centeredSlides={true}
+            pagination={true}
+            modules={[Pagination]}
+          >
+            <SwiperSlide>
+              <PlantCard />
+            </SwiperSlide>
+            <SwiperSlide>
+              <PlantCard />
+            </SwiperSlide>
+            <SwiperSlide>
+              <PlantCard />
+            </SwiperSlide>
+          </Swiper>
+          {/* <PlantCard /> */}
         </div>
-      </main>
+      </section>
+
+      <section className="xl:container mx-auto w-full min-h-screen p-3">
+        <h2 className="text-3xl font-bold text-center text-forestgreen-900">
+          Mengapa kita perlu melakukan{" "}
+          <span className="underline">konservasi</span>?
+        </h2>
+      </section>
+
+      <section className="xl:container mx-auto w-full min-h-screen p-3">
+        <h2 className="text-3xl font-bold text-center text-forestgreen-900">
+          Yang dapat kita lakukan
+        </h2>
+      </section>
     </div>
   );
 }

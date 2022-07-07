@@ -37,7 +37,7 @@ const Navbar = () => {
           isMenuOpen && "left-0 transition-all"
         )}
       >
-        <ul className="child:text-white child:flex child:mb-1 child-hover:bg-white/20 child:p-2 child:rounded-lg child:cursor-pointer child:child:w-full child:child:h-full">
+        <ul className="font-body child:text-white child:flex child:mb-1 child-hover:bg-white/20 child:p-2 child:rounded-lg child:cursor-pointer child:child:w-full child:child:h-full">
           <li>
             <Link href="/#">Menu Utama</Link>
           </li>

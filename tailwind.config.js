@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        heading: "Dosis",
+        body: "Quicksand",
+      },
       colors: {
         beachbrown: {
           50: "#C5A28E",
