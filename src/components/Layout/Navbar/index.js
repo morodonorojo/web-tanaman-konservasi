@@ -9,10 +9,10 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky z-50 top-0 w-full h-14 p-3 bg-beachbrown-900 drop-shadow-lg flex flex-row justify-between items-center">
+    <nav className="sticky top-0 z-50 flex h-14 w-full flex-row items-center justify-between bg-beachbrown-900 p-3 drop-shadow-lg">
       <Link href="/" passHref>
-        <div className="flex flex-row cursor-pointer">
-          <div className="kkn-logo relative w-8 h-8 items-center">
+        <div className="flex cursor-pointer flex-row">
+          <div className="kkn-logo relative h-8 w-8 items-center">
             <Image
               src="/logo/logo-morodonorojo.webp"
               alt="Logo KKN-PPM UGM 2022 Periode 2 Moro Donorojo"
@@ -20,7 +20,7 @@ const Navbar = () => {
               objectFit="contain"
             />
           </div>
-          <span className="font-bold m-auto text-white">
+          <span className="m-auto font-bold text-white">
             Tanaman Konservasi
           </span>
         </div>
@@ -33,11 +33,11 @@ const Navbar = () => {
       </div>
       <div
         className={clsx(
-          "absolute mt-14 left-[-100%] p-2 top-0 w-full h-screen bg-beachbrown-500 transition-all",
+          "absolute left-[-100%] top-0 mt-14 h-screen w-full bg-beachbrown-500 p-2 transition-all",
           isMenuOpen && "left-0 transition-all"
         )}
       >
-        <ul className="font-body child:text-white child:flex child:mb-1 child-hover:bg-white/20 child:p-2 child:rounded-lg child:cursor-pointer child:child:w-full child:child:h-full">
+        <ul className="font-body child:mb-1 child:flex child:child:h-full child:child:w-full child:cursor-pointer child:rounded-lg child:p-2 child:text-white child-hover:bg-white/20">
           <li>
             <Link href="/#">Menu Utama</Link>
           </li>

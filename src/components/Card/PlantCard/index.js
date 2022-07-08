@@ -14,14 +14,14 @@ const PlantCard = ({
   return (
     <div
       className={clsx(
-        "rounded-lg shadow-lg bg-mutedgray-50 w-[200px] h-[300px] p-3 relative overflow-clip flex items-end mx-auto"
+        "relative mx-auto flex h-[300px] w-[200px] items-end overflow-clip rounded-lg bg-mutedgray-50 p-3 shadow-lg"
       )}
       {...props}
     >
-      <p className="plant-name font-bold text-white text-xl origin-top-left rotate-90 left-10 top-4 absolute z-10 w-full">
+      <p className="plant-name absolute left-10 top-4 z-10 w-full origin-top-left rotate-90 text-xl font-bold text-white">
         Cemara Laut
       </p>
-      <div className="absolute w-full h-full scale-125 -right-4 -bottom-4">
+      <div className="absolute -right-4 -bottom-4 h-full w-full scale-125">
         <Image
           src="/image/cemara.png"
           alt="Pohon cemara"

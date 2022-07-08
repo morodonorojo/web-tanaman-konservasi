@@ -5,7 +5,7 @@ import BackArrowHeader from "../../components/BackArrowHeader";
 import Carousel from "../../components/Carousel";
 import { MainButton } from "../../components/Button";
 
-const DetailTanaman = ({...props}) => {
+const DetailTanaman = ({ ...props }) => {
   const [activeCategory, setActiveCategory] = useState("peran");
 
   return (
@@ -40,14 +40,14 @@ const DetailTanaman = ({...props}) => {
             Persebaran
           </MainButton>
         </div>
-        <div className="explanation relative font-body text-sm text-justify mt-4">
+        <div className="explanation relative mt-4 text-justify font-body text-sm">
           <div
             data-category="peran"
             className={clsx(
               "absolute w-full duration-500",
               activeCategory === "peran"
-                ? "left-0 transition-all opacity-100"
-                : "-left-[5555px] transition-all opacity-0"
+                ? "left-0 opacity-100 transition-all"
+                : "-left-[5555px] opacity-0 transition-all"
             )}
           >
             <p>
@@ -62,8 +62,8 @@ const DetailTanaman = ({...props}) => {
             className={clsx(
               "absolute w-full duration-500",
               activeCategory === "morfologi"
-                ? "left-0 transition-all opacity-100"
-                : "-left-[5555px] transition-all opacity-0"
+                ? "left-0 opacity-100 transition-all"
+                : "-left-[5555px] opacity-0 transition-all"
             )}
           >
             <p>
@@ -78,8 +78,8 @@ const DetailTanaman = ({...props}) => {
             className={clsx(
               "absolute w-full duration-500",
               activeCategory === "persebaran"
-                ? "left-0 transition-all opacity-100"
-                : "-left-[5555px] transition-all opacity-0"
+                ? "left-0 opacity-100 transition-all"
+                : "-left-[5555px] opacity-0 transition-all"
             )}
           >
             <p>

@@ -20,8 +20,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="xl:container mx-auto w-full p-3">
-        <h1 className="text-3xl font-bold text-center text-forestgreen-900 mb-8">
+      <section className="mx-auto w-full p-3 xl:container">
+        <h1 className="mb-8 text-center text-3xl font-bold text-forestgreen-900">
           Tanaman Konservasi di Pantai Ngiroboyo
         </h1>
         <div className="plant-list flex">
@@ -45,15 +45,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="xl:container mx-auto w-full min-h-screen p-3">
-        <h2 className="text-3xl font-bold text-center text-forestgreen-900">
+      <section className="mx-auto min-h-screen w-full p-3 xl:container">
+        <h2 className="text-center text-3xl font-bold text-forestgreen-900">
           Mengapa kita perlu melakukan{" "}
           <span className="underline">konservasi</span>?
         </h2>
       </section>
 
-      <section className="xl:container mx-auto w-full min-h-screen p-3">
-        <h2 className="text-3xl font-bold text-center text-forestgreen-900">
+      <section className="mx-auto min-h-screen w-full p-3 xl:container">
+        <h2 className="text-center text-3xl font-bold text-forestgreen-900">
           Yang dapat kita lakukan
         </h2>
       </section>
