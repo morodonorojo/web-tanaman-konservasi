@@ -44,7 +44,7 @@ const DetailTanaman = ({...props}) => {
           <div
             data-category="peran"
             className={clsx(
-              "absolute w-full",
+              "absolute w-full duration-500",
               activeCategory === "peran"
                 ? "left-0 transition-all opacity-100"
                 : "-left-[5555px] transition-all opacity-0"
@@ -60,7 +60,7 @@ const DetailTanaman = ({...props}) => {
           <div
             data-category="morfologi"
             className={clsx(
-              "absolute w-full",
+              "absolute w-full duration-500",
               activeCategory === "morfologi"
                 ? "left-0 transition-all opacity-100"
                 : "-left-[5555px] transition-all opacity-0"
@@ -76,7 +76,7 @@ const DetailTanaman = ({...props}) => {
           <div
             data-category="persebaran"
             className={clsx(
-              "absolute w-full",
+              "absolute w-full duration-500",
               activeCategory === "persebaran"
                 ? "left-0 transition-all opacity-100"
                 : "-left-[5555px] transition-all opacity-0"

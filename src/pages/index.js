@@ -29,8 +29,8 @@ export default function Home() {
             spaceBetween={10}
             slidesPerView={1}
             centeredSlides={true}
-            pagination={true}
-            modules={[Pagination]}
+            // pagination={true}
+            // modules={[Pagination]}
           >
             <SwiperSlide>
               <PlantCard />

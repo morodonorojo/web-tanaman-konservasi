@@ -7,7 +7,7 @@ function MainButton({ children, isActive, ...props }) {
       className={clsx(
         isActive && "rounded-full bg-forestgreen-900 text-white font-bold transition-all",
         !isActive && "text-mutedgray-900 transition-all",
-        "cursor-pointer p-2 min-w-[80px]"
+        "cursor-pointer p-2 min-w-[80px] duration-500"
       )}
       {...props}
     >
