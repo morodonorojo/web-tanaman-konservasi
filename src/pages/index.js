@@ -42,7 +42,6 @@ export default function Home() {
               <PlantCard />
             </SwiperSlide>
           </Swiper>
-          {/* <PlantCard /> */}
         </div>
       </section>
 
