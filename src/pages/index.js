@@ -10,7 +10,7 @@ import { PlantCard } from "../components/Card";
 
 export default function Home() {
   return (
-    <div>
+    <div className="mx-auto max-w-3xl">
       <Head>
         <title>Tanaman Konservasi | Moro Donorojo 2022</title>
         <meta
@@ -20,18 +20,37 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="mx-auto w-full p-3 xl:container">
-        <h1 className="mb-8 text-center text-3xl font-bold text-forestgreen-900">
+      <section className="w-full p-3">
+        <h1 className="mx-auto mb-4 max-w-sm text-center text-3xl font-bold text-forestgreen-900">
           Tanaman Konservasi di Pantai Ngiroboyo
         </h1>
-        <div className="plant-list flex">
+        <div className="plant-list flex [&_.swiper-wrapper]:mb-10">
           <Swiper
             spaceBetween={10}
             slidesPerView={1}
             centeredSlides={true}
-            // pagination={true}
-            // modules={[Pagination]}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+            }}
+            pagination={true}
+            modules={[Pagination]}
           >
+            <SwiperSlide>
+              <PlantCard />
+            </SwiperSlide>
+            <SwiperSlide>
+              <PlantCard />
+            </SwiperSlide>
+            <SwiperSlide>
+              <PlantCard />
+            </SwiperSlide>
             <SwiperSlide>
               <PlantCard />
             </SwiperSlide>
@@ -45,15 +64,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto min-h-screen w-full p-3 xl:container">
-        <h2 className="text-center text-3xl font-bold text-forestgreen-900">
+      <section className="mx-auto mt-4 w-full p-3">
+        <h2 className="text-center text-3xl font-bold text-forestgreen-900 mb-2">
           Mengapa kita perlu melakukan{" "}
           <span className="underline">konservasi</span>?
         </h2>
+        <p className="text-justify font-body">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Reprehenderit, laboriosam dicta modi quia provident laudantium nulla
+          error alias facilis dolorum facere eius cumque libero numquam possimus
+          a, obcaecati temporibus magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iste temporibus perferendis, rem blanditiis vitae aliquid quo dolorum vel voluptate quas voluptatum dicta eligendi recusandae eveniet consequuntur ipsam ab reiciendis.
+        </p>
       </section>
 
-      <section className="mx-auto min-h-screen w-full p-3 xl:container">
-        <h2 className="text-center text-3xl font-bold text-forestgreen-900">
+      <section className="mx-auto mt-4 min-h-screen w-full p-3">
+        <h2 className="text-center text-3xl font-bold text-forestgreen-900 mb-2">
           Yang dapat kita lakukan
         </h2>
       </section>
