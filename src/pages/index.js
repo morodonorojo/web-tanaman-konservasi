@@ -6,7 +6,7 @@ import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import { PlantCard } from "../components/Card";
+import { IconCard, PlantCard } from "../components/Card";
 
 export default function Home() {
   return (
@@ -65,7 +65,7 @@ export default function Home() {
       </section>
 
       <section className="mx-auto mt-4 w-full p-3">
-        <h2 className="text-center text-3xl font-bold text-forestgreen-900 mb-2">
+        <h2 className="mb-2 text-center text-3xl font-bold text-forestgreen-900">
           Mengapa kita perlu melakukan{" "}
           <span className="underline">konservasi</span>?
         </h2>
@@ -73,14 +73,25 @@ export default function Home() {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           Reprehenderit, laboriosam dicta modi quia provident laudantium nulla
           error alias facilis dolorum facere eius cumque libero numquam possimus
-          a, obcaecati temporibus magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iste temporibus perferendis, rem blanditiis vitae aliquid quo dolorum vel voluptate quas voluptatum dicta eligendi recusandae eveniet consequuntur ipsam ab reiciendis.
+          a, obcaecati temporibus magnam. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Reprehenderit iste temporibus perferendis, rem
+          blanditiis vitae aliquid quo dolorum vel voluptate quas voluptatum
+          dicta eligendi recusandae eveniet consequuntur ipsam ab reiciendis.
         </p>
       </section>
 
       <section className="mx-auto mt-4 min-h-screen w-full p-3">
-        <h2 className="text-center text-3xl font-bold text-forestgreen-900 mb-2">
+        <h2 className="mb-2 text-center text-3xl font-bold text-forestgreen-900">
           Yang dapat kita lakukan
         </h2>
+        <div className="grid grid-flow-row grid-cols-1 place-items-center gap-4 sm:grid-cols-2 md:grid-cols-3">
+          <IconCard>Mencuci Tangan Dengan Rajin</IconCard>
+          <IconCard>Mencuci Tangan Dengan Rajin</IconCard>
+          <IconCard>Mencuci Tangan Dengan Rajin</IconCard>
+          <IconCard>Mencuci Tangan Dengan Rajin</IconCard>
+          <IconCard>Mencuci Tangan Dengan Rajin</IconCard>
+          <IconCard>Mencuci Tangan Dengan Rajin</IconCard>
+        </div>
       </section>
     </div>
   );
