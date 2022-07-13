@@ -66,23 +66,40 @@ export default function Home() {
 
       <section className="mx-auto mt-4 w-full p-3">
         <h2 className="mb-2 text-center text-3xl font-bold text-forestgreen-900">
+          Apa itu <span className="underline">konservasi</span> pantai?
+        </h2>
+        <p className="text-justify font-body">
+          Konservasi adalah upaya-upaya perlindungan dan pelestarian lingkungan,
+          melakukan kegiatan pemanfaatan sumberdaya alam secara terkendali
+          sekaligus mempertahankan keberadaan setiap komponen-konponen
+          lingkungan untuk pemanfaatan di masa yang akan datang. Konservasi
+          pantai sendiri berbagai kegiatan konservasi yang dilakukan di kawasan
+          pantai atau pesisir terhadap berbagai komponen abiotik dan biotik
+          pantai. Komponen abiotik pantai antara lain gelombang, arus, angin,
+          pasir, batuan, dan sebagainya. Sementara komponen biotik pantai
+          terdiri terdiri dari tumbuhan (flora) dan hewan (fauna) yang hidup
+          menempati kawasan pesisir/pantai.
+        </p>
+      </section>
+
+      <section className="mx-auto mt-4 w-full p-3">
+        <h2 className="mb-2 text-center text-3xl font-bold text-forestgreen-900">
           Mengapa kita perlu melakukan{" "}
           <span className="underline">konservasi</span>?
         </h2>
         <p className="text-justify font-body">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Reprehenderit, laboriosam dicta modi quia provident laudantium nulla
-          error alias facilis dolorum facere eius cumque libero numquam possimus
-          a, obcaecati temporibus magnam. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Reprehenderit iste temporibus perferendis, rem
-          blanditiis vitae aliquid quo dolorum vel voluptate quas voluptatum
-          dicta eligendi recusandae eveniet consequuntur ipsam ab reiciendis.
+          Konservasi pantai penting untuk dilakukan demi mempertahankan
+          ekosistem pantai dan keberlanjutannya tetap lestari. Ekosistem pantai
+          yang terjaga akan dapat memastikan fungsinya dari aspek ekologis dan
+          aspek lainnya berjalan secara maksimal pula, mengingat peran pantai
+          sangat penting diantaranya seperti perlindungan bahaya abrasi, sebagai
+          habitat satwa liar, tempat wisata, dan lain-lain.
         </p>
       </section>
 
       <section className="mx-auto mt-4 min-h-screen w-full p-3">
         <h2 className="mb-2 text-center text-3xl font-bold text-forestgreen-900">
-          Yang dapat kita lakukan
+          Peran Vegetasi Pantai
         </h2>
         <div className="grid grid-flow-row grid-cols-1 place-items-center gap-4 sm:grid-cols-2 md:grid-cols-3">
           <IconCard>Mencuci Tangan Dengan Rajin</IconCard>

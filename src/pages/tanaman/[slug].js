@@ -9,7 +9,7 @@ const DetailTanaman = ({ ...props }) => {
   const [activeCategory, setActiveCategory] = useState("peran");
 
   return (
-    <section className="mx-auto w-full xl:container" {...props}>
+    <section className="w-full mx-auto max-w-3xl" {...props}>
       <div className="mt-3 px-3">
         <BackArrowHeader />
       </div>
