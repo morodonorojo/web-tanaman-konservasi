@@ -1,7 +1,7 @@
 import { PrismicProvider } from "@prismicio/react";
 import Link from "next/link";
 
-import { linkResolver } from "../../prismic";
+import { linkResolver } from "../../prismicio";
 import { Layout } from "../components/Layout";
 
 import "../styles/globals.css";

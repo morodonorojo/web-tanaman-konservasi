@@ -1,31 +1,40 @@
 {
-  "id": "a8c9f372-5f58-46f2-954f-0d5874811da6",
-  "uid": "facilis-dolorum-ut",
+  "id": "12b95b85-0a1c-4439-b55f-7f91d7fb6224",
+  "uid": "omnis-hic-et",
   "type": "plantdata",
   "data": {
-    "plantName": "facilitate B2C web-readiness",
-    "plantNameLatin": "syndicate dot-com web-readiness",
+    "plantName": "implement transparent schemas",
+    "plantNameLatin": "leverage visionary systems",
     "usage": [
       {
         "type": "paragraph",
-        "text": "Sint nostrud pariatur enim esse sit pariatur laboris ex excepteur laboris mollit ad ut. Ut sunt adipisicing exercitation. Lorem anim eiusmod mollit cillum amet velit laborum laborum do deserunt voluptate irure.",
+        "text": "In ex ea consectetur enim qui ullamco sint nulla laborum tempor culpa laboris culpa.",
         "spans": []
       }
     ],
     "habitat": [
       {
         "type": "paragraph",
-        "text": "Pariatur et officia proident proident irure aute amet occaecat sit id voluptate nostrud voluptate id. Tempor ut fugiat ipsum eiusmod esse.",
+        "text": "Et nostrud veniam amet sint pariatur anim eu eu in est voluptate minim et consequat velit. Pariatur ea consectetur aliquip. Eu consequat labore dolor nulla sint commodo consequat minim mollit mollit occaecat non in.",
         "spans": []
       }
     ],
     "morphology": [
       {
         "type": "paragraph",
-        "text": "Tempor eu ullamco quis laboris minim irure aute. Velit dolor exercitation enim nisi et aute labore exercitation cillum anim ipsum in.",
+        "text": "Ea nostrud qui id enim ad magna consectetur nisi sit veniam voluptate. Proident proident mollit et cupidatat. Deserunt consequat velit sint nulla.",
         "spans": []
       }
     ],
-    "conservationStatus": "exploit extensible blockchains"
+    "conservationStatus": "recontextualize proactive interfaces",
+    "featuredImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb?w=900&h=500&fit=crop"
+    }
   }
 }

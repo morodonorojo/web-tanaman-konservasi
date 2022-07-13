@@ -7,8 +7,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import { IconCard, PlantCard } from "../components/Card";
+import { createClient } from "../../prismicio";
+import { useEffect } from "react";
 
-export default function Home() {
+export default function Home({ vegetationRole }) {
+  useEffect(() => {
+    console.log(vegetationRole);
+  }, [vegetationRole]);
+
   return (
     <div className="mx-auto max-w-3xl">
       <Head>
@@ -102,14 +108,28 @@ export default function Home() {
           Peran Vegetasi Pantai
         </h2>
         <div className="grid grid-flow-row grid-cols-1 place-items-center gap-4 sm:grid-cols-2 md:grid-cols-3">
-          <IconCard>Mencuci Tangan Dengan Rajin</IconCard>
-          <IconCard>Mencuci Tangan Dengan Rajin</IconCard>
-          <IconCard>Mencuci Tangan Dengan Rajin</IconCard>
-          <IconCard>Mencuci Tangan Dengan Rajin</IconCard>
-          <IconCard>Mencuci Tangan Dengan Rajin</IconCard>
-          <IconCard>Mencuci Tangan Dengan Rajin</IconCard>
+          {vegetationRole.map((vegetation) => {
+            return (
+              <IconCard key={vegetation.id} icon={vegetation.data.icon}>
+                {vegetation.data.role}
+              </IconCard>
+            );
+          })}
         </div>
       </section>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  // Client used to fetch CMS content.
+  const client = createClient();
+
+  // Page document for our homepage from the CMS.
+  const vegetationRole = await client.getAllByType("vegetationrole");
+
+  // Pass the homepage as prop to our page.
+  return {
+    props: { vegetationRole },
+  };
 }
