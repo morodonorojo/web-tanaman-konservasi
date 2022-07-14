@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { LearnMoreButton } from "../../Button";
 
@@ -18,7 +19,7 @@ const PlantCard = ({
       )}
       {...props}
     >
-      <p className="plant-name absolute left-10 top-4 z-10 w-full origin-top-left rotate-90 text-xl font-bold text-white">
+      <p className="plant-name absolute left-10 top-4 z-10 w-full origin-top-left rotate-90 text-xl font-semibold text-white">
         Cemara Laut
       </p>
       <div className="absolute -right-4 -bottom-4 h-full w-full scale-125">
@@ -29,7 +30,11 @@ const PlantCard = ({
           objectFit="contain"
         />
       </div>
-      <LearnMoreButton className="z-10">Pelajari Lebih Lanjut</LearnMoreButton>
+      <Link href={href || "/tanaman/cemara"}>
+        <LearnMoreButton className="z-10">
+          Pelajari Lebih Lanjut
+        </LearnMoreButton>
+      </Link>
     </div>
   );
 };

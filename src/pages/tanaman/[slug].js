@@ -17,7 +17,7 @@ const DetailTanaman = ({ ...props }) => {
         <Carousel />
       </div>
       <div className="plant-detail min-h-screen w-full rounded-tr-2xl rounded-tl-2xl bg-mutedgray-25 p-3">
-        <div className="category-buttons w-full child:mx-1">
+        <div className="category-buttons w-full child:mx-1 flex justify-center">
           <MainButton
             data-category="peran"
             onClick={(e) => setActiveCategory(e.target.dataset.category)}

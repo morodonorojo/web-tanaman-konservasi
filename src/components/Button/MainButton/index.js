@@ -6,7 +6,7 @@ function MainButton({ children, isActive, ...props }) {
     <button
       className={clsx(
         isActive &&
-          "rounded-full bg-forestgreen-900 font-bold text-white transition-all",
+          "rounded-full bg-forestgreen-900 font-semibold text-white transition-all",
         !isActive && "text-mutedgray-900 transition-all",
         "min-w-[80px] cursor-pointer p-2 duration-500"
       )}

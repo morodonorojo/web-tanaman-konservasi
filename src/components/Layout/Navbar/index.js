@@ -24,7 +24,7 @@ const Navbar = () => {
               objectFit="contain"
             />
           </div>
-          <span className="m-auto font-bold text-white">
+          <span className="m-auto font-semibold text-white">
             Tanaman Konservasi
           </span>
         </div>
@@ -43,25 +43,25 @@ const Navbar = () => {
       >
         <ul className="font-body child:mb-1 child:flex child:child:h-full child:child:w-full child:cursor-pointer child:rounded-lg child:p-2 child:text-white child-hover:bg-white/20">
           <li>
-            <Link href="/#">Menu Utama</Link>
+            <Link href="/">Menu Utama</Link>
           </li>
           <li>
-            <Link href="/##">Kelapa</Link>
+            <Link href="/tanaman/kelapa">Kelapa</Link>
           </li>
           <li>
-            <Link href="/">Cemara</Link>
+            <Link href="/tanaman/cemara">Cemara Laut</Link>
           </li>
           <li>
-            <Link href="/">Ketapang</Link>
+            <Link href="/tanaman/ketapang">Ketapang</Link>
           </li>
           <li>
-            <Link href="/">Nyamplung</Link>
+            <Link href="/tanaman/nyamplung">Nyamplung</Link>
           </li>
           <li>
-            <Link href="/">Waru Laut</Link>
+            <Link href="/tanaman/waru">Waru Laut</Link>
           </li>
           <li>
-            <Link href="/">Pandan Laut</Link>
+            <Link href="/tanaman/pandan">Pandan Laut</Link>
           </li>
         </ul>
       </div>

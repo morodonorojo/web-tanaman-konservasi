@@ -11,7 +11,7 @@ const BackArrowHeader = ({ plantName, href, ...props }) => {
           <BackArrow className="scale-[80%]" />
         </div>
       </Link>
-      <p className="ml-1 text-base font-bold text-forestgreen-900">
+      <p className="ml-2 text-base font-semibold text-forestgreen-900">
         {plantName || "Cemara Laut"}
       </p>
     </div>

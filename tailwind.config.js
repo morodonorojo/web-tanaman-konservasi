@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        heading: "Dosis",
-        body: "Quicksand",
+        heading: "Work Sans",
+        body: "Lato",
       },
       colors: {
         beachbrown: {

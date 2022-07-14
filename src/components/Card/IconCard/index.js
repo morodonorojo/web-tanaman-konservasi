@@ -5,7 +5,7 @@ const IconCard = ({ icon, children }) => {
   return (
     <div
       className="flex w-60 flex-col items-center justify-center rounded-md
-     bg-forestgreen-100 p-3 text-center font-body text-lg font-bold text-white"
+     bg-forestgreen-100 p-3 text-center font-body text-lg font-semibold text-white"
     >
       <div>
         <Image

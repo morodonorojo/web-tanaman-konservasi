@@ -27,7 +27,7 @@ export default function Home({ vegetationRole }) {
       </Head>
 
       <section className="w-full p-3">
-        <h1 className="mx-auto mb-4 max-w-sm text-center text-3xl font-bold text-forestgreen-900">
+        <h1 className="mx-auto mb-4 max-w-sm text-center text-3xl font-semibold text-forestgreen-900">
           Tanaman Konservasi di Pantai Ngiroboyo
         </h1>
         <div className="plant-list flex [&_.swiper-wrapper]:mb-10">
@@ -70,9 +70,9 @@ export default function Home({ vegetationRole }) {
         </div>
       </section>
 
-      <section className="mx-auto mt-4 w-full p-3">
-        <h2 className="mb-2 text-center text-3xl font-bold text-forestgreen-900">
-          Apa itu <span className="underline">konservasi</span> pantai?
+      <section className="mx-auto mt-4 w-full p-3 px-6">
+        <h2 className="mb-2 text-center text-3xl text-forestgreen-900">
+          Apa itu <span className="font-semibold">konservasi</span> pantai?
         </h2>
         <p className="text-justify font-body">
           Konservasi adalah upaya-upaya perlindungan dan pelestarian lingkungan,
@@ -88,10 +88,10 @@ export default function Home({ vegetationRole }) {
         </p>
       </section>
 
-      <section className="mx-auto mt-4 w-full p-3">
-        <h2 className="mb-2 text-center text-3xl font-bold text-forestgreen-900">
+      <section className="mx-auto mt-4 w-full p-3 px-6">
+        <h2 className="mb-2 text-center text-3xl text-forestgreen-900">
           Mengapa kita perlu melakukan{" "}
-          <span className="underline">konservasi</span>?
+          <span className="font-semibold">konservasi</span>?
         </h2>
         <p className="text-justify font-body">
           Konservasi pantai penting untuk dilakukan demi mempertahankan
@@ -104,10 +104,10 @@ export default function Home({ vegetationRole }) {
       </section>
 
       <section className="mx-auto mt-4 min-h-screen w-full p-3">
-        <h2 className="mb-2 text-center text-3xl font-bold text-forestgreen-900">
+        <h2 className="mb-2 text-center text-3xl font-semibold text-forestgreen-900">
           Peran Vegetasi Pantai
         </h2>
-        <div className="grid grid-flow-row grid-cols-1 place-items-center gap-4 sm:grid-cols-2 md:grid-cols-3">
+        <div className="grid grid-flow-row grid-cols-1 place-items-center gap-4 sm:grid-cols-2 md:grid-cols-3 pb-4">
           {vegetationRole.map((vegetation) => {
             return (
               <IconCard key={vegetation.id} icon={vegetation.data.icon}>
