@@ -5,15 +5,20 @@ import BackArrow from "../../assets/icon/arrow.svg";
 
 const BackArrowHeader = ({ plantName, href, ...props }) => {
   return (
-    <div className="flex w-full flex-row items-center" {...props}>
+    <div
+      className="flex w-full flex-row items-center cursor-pointer"
+      {...props}
+    >
       <Link href={href || "/"}>
-        <div className="icon flex h-6 w-6 items-center justify-center rounded-full bg-forestgreen-900">
-          <BackArrow className="scale-[80%]" />
+        <div className="flex flex-row">
+          <div className="icon flex h-6 w-6 items-center justify-center rounded-full bg-forestgreen-900">
+            <BackArrow className="scale-[80%]" />
+          </div>
+          <p className="ml-2 text-base font-semibold text-forestgreen-900">
+            {plantName || "Cemara Laut"}
+          </p>
         </div>
       </Link>
-      <p className="ml-2 text-base font-semibold text-forestgreen-900">
-        {plantName || "Cemara Laut"}
-      </p>
     </div>
   );
 };
