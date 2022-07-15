@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["konservasi-tanaman.cdn.prismic.io"],
+    domains: ["konservasi-tanaman.cdn.prismic.io", "images.prismic.io"],
   },
   webpack(config) {
     config.module.rules.push({

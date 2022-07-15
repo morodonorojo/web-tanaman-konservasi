@@ -1,9 +1,9 @@
 {
-  "id": "bd6026a7-d93e-4dbf-abad-2f099afc18d1",
-  "uid": "labore-maiores-assumenda",
+  "id": "31618176-ca7e-41aa-a798-4f7786282548",
+  "uid": "rem-culpa-nihil",
   "type": "vegetationrole",
   "data": {
-    "role": "utilize impactful e-commerce",
+    "role": "exploit innovative markets",
     "icon": {
       "dimensions": {
         "width": 900,
@@ -11,7 +11,16 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=900&h=500&fit=crop"
+    },
+    "backgroundImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=900&h=500&fit=crop"
     }
   }
 }

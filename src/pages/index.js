@@ -110,7 +110,11 @@ export default function Home({ vegetationRole }) {
         <div className="grid grid-flow-row grid-cols-1 place-items-center gap-4 sm:grid-cols-2 md:grid-cols-3 pb-4">
           {vegetationRole.map((vegetation) => {
             return (
-              <IconCard key={vegetation.id} icon={vegetation.data.icon}>
+              <IconCard
+                key={vegetation.id}
+                icon={vegetation.data.icon}
+                backgroundImage={vegetation.data.backgroundImage}
+              >
                 {vegetation.data.role}
               </IconCard>
             );

@@ -19,6 +19,14 @@
           "constraint": {},
           "thumbnails": []
         }
+      },
+      "backgroundImage": {
+        "type": "Image",
+        "config": {
+          "label": "Background Image",
+          "constraint": {},
+          "thumbnails": []
+        }
       }
     }
   }

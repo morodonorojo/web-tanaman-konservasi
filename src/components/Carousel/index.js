@@ -8,7 +8,7 @@ import CarouselItem from "./CarouselItem";
 
 const Carousel = ({ imageData, ...props }) => {
   return (
-    <div {...props} className="h-52 w-full">
+    <div {...props} className="h-60 md:h-80 w-full">
       <Swiper
         spaceBetween={10}
         slidesPerView={1}
@@ -16,7 +16,7 @@ const Carousel = ({ imageData, ...props }) => {
         pagination={true}
         modules={[Pagination]}
         loop={true}
-        className="h-full"
+        className="h-full aspect-[3/2]"
       >
         <SwiperSlide>
           <CarouselItem />
