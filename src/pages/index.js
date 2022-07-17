@@ -10,10 +10,10 @@ import { IconCard, PlantCard } from "../components/Card";
 import { createClient } from "../../prismicio";
 import { useEffect } from "react";
 
-export default function Home({ vegetationRole }) {
+export default function Home({ vegetationRole, plantData }) {
   useEffect(() => {
-    console.log(vegetationRole);
-  }, [vegetationRole]);
+    console.log(plantData);
+  }, [plantData]);
 
   return (
     <div className="mx-auto max-w-3xl">
@@ -48,24 +48,18 @@ export default function Home({ vegetationRole }) {
             pagination={true}
             modules={[Pagination]}
           >
-            <SwiperSlide>
-              <PlantCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <PlantCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <PlantCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <PlantCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <PlantCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <PlantCard />
-            </SwiperSlide>
+            {plantData.map((plant) => {
+              return (
+                <SwiperSlide key={plant.id}>
+                  <PlantCard
+                    plantName={plant.data.plantName}
+                    srcImage={plant.data.featuredImage.url}
+                    altImage={plant.data.featuredImage.alt}
+                    href={plant.slugs[0]}
+                  />
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
         </div>
       </section>
@@ -131,9 +125,17 @@ export async function getStaticProps() {
 
   // Page document for our homepage from the CMS.
   const vegetationRole = await client.getAllByType("vegetationrole");
+  const plantData = await client.getAllByType("plantdata", {
+    graphQuery: `{
+      plantdata {
+        featuredImage
+        plantName
+      }
+    }`,
+  });
 
   // Pass the homepage as prop to our page.
   return {
-    props: { vegetationRole },
+    props: { vegetationRole, plantData },
   };
 }

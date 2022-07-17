@@ -20,17 +20,18 @@ const PlantCard = ({
       {...props}
     >
       <p className="plant-name absolute left-10 top-4 z-10 w-full origin-top-left rotate-90 text-xl font-semibold text-white">
-        Cemara Laut
+        {plantName}
       </p>
       <div className="absolute -right-4 -bottom-4 h-full w-full scale-125">
         <Image
-          src="/image/cemara.png"
-          alt="Pohon cemara"
-          layout="fill"
+          src={srcImage}
+          alt={altImage}
+          width={200}
+          height={300}
           objectFit="contain"
         />
       </div>
-      <Link href={href || "/tanaman/cemara"}>
+      <Link href={`/tanaman/${href}` || "/tanaman/cemara"}>
         <LearnMoreButton className="z-10">
           Pelajari Lebih Lanjut
         </LearnMoreButton>
