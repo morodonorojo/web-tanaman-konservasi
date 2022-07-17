@@ -1,0 +1,40 @@
+{
+  "id": "be99262b-b157-4209-a564-57ef70f56498",
+  "uid": "eligendi-iusto-enim",
+  "type": "plantdata",
+  "data": {
+    "plantName": "unleash mission-critical vortals",
+    "plantNameLatin": "enable B2B e-commerce",
+    "usage": [
+      {
+        "type": "paragraph",
+        "text": "Aliquip excepteur deserunt ullamco qui in id voluptate officia proident qui.",
+        "spans": []
+      }
+    ],
+    "habitat": [
+      {
+        "type": "paragraph",
+        "text": "Deserunt aliqua exercitation mollit irure ex quis laboris enim pariatur officia fugiat consequat consequat laboris proident. Ea non ex adipisicing commodo esse elit dolor voluptate mollit minim mollit reprehenderit.",
+        "spans": []
+      }
+    ],
+    "morphology": [
+      {
+        "type": "paragraph",
+        "text": "Sit occaecat laboris laboris in eu adipisicing pariatur exercitation velit voluptate. Voluptate mollit id sunt nulla dolore do consectetur ea nulla tempor consequat ea mollit.",
+        "spans": []
+      }
+    ],
+    "conservationStatus": "implement extensible systems",
+    "featuredImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
+    }
+  }
+}

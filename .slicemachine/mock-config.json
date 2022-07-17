@@ -1,0 +1,32 @@
+{
+  "slices": {
+    "ImageGallery": {
+      "default": {
+        "primary": {}
+      }
+    }
+  },
+  "_cts": {
+    "plantdata": {
+      "habitat": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "usage": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "morphology": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    },
+    "vegetationrole": {}
+  }
+}

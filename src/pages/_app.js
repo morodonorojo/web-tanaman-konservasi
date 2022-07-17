@@ -1,10 +1,24 @@
+import { PrismicProvider } from "@prismicio/react";
+import Link from "next/link";
+
+import { linkResolver } from "../../prismicio";
 import { Layout } from "../components/Layout";
+
 import "../styles/globals.css";
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    // <Layout>
-    <Component {...pageProps} />
-    // </Layout>
+    <PrismicProvider
+      linkResolver={linkResolver}
+      internalLinkComponent={({ href, children, ...props }) => (
+        <Link href={href}>
+          <a {...props}>{children}</a>
+        </Link>
+      )}
+    >
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </PrismicProvider>
   );
 }
