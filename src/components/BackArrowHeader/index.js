@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import BackArrow from "../../assets/icon/arrow.svg";
 
-const BackArrowHeader = ({ plantName, href, ...props }) => {
+const BackArrowHeader = ({ plantName, plantNameLatin, href, ...props }) => {
   return (
     <div
       className="flex w-full flex-row items-center cursor-pointer"
@@ -15,7 +15,10 @@ const BackArrowHeader = ({ plantName, href, ...props }) => {
             <BackArrow className="scale-[80%]" />
           </div>
           <p className="ml-2 text-base font-semibold text-forestgreen-900">
-            {plantName || "Cemara Laut"}
+            {plantName}
+          </p>
+          <p className="ml-1 text-base font-semibold text-forestgreen-900 italic">
+            ({plantNameLatin})
           </p>
         </div>
       </Link>

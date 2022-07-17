@@ -1,20 +1,15 @@
 import Head from "next/head";
-import Image from "next/image";
+import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
+
+import { IconCard, PlantCard } from "../components/Card";
+import { createClient } from "../../prismicio";
 
 import "swiper/css";
 import "swiper/css/pagination";
 
-import { IconCard, PlantCard } from "../components/Card";
-import { createClient } from "../../prismicio";
-import { useEffect } from "react";
-
 export default function Home({ vegetationRole, plantData }) {
-  useEffect(() => {
-    console.log(plantData);
-  }, [plantData]);
-
   return (
     <div className="mx-auto max-w-3xl">
       <Head>
@@ -55,7 +50,7 @@ export default function Home({ vegetationRole, plantData }) {
                     plantName={plant.data.plantName}
                     srcImage={plant.data.featuredImage.url}
                     altImage={plant.data.featuredImage.alt}
-                    href={plant.slugs[0]}
+                    href={plant.uid}
                   />
                 </SwiperSlide>
               );

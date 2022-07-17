@@ -1,21 +1,30 @@
 import React, { useState } from "react";
 import clsx from "clsx";
 
+import { createClient } from "../../../prismicio";
+
 import BackArrowHeader from "../../components/BackArrowHeader";
 import Carousel from "../../components/Carousel";
 import { MainButton } from "../../components/Button";
 
-const DetailTanaman = ({ ...props }) => {
+const DetailTanaman = ({ plantDetail, ...props }) => {
   const [activeCategory, setActiveCategory] = useState("peran");
 
   return (
-    <section className="w-full mx-auto max-w-xl" {...props}>
+    <section className="w-full mx-auto max-w-xl overflow-hidden" {...props}>
       <div className="mt-3 px-3">
-        <BackArrowHeader />
+        <BackArrowHeader
+          plantName={plantDetail.data.plantName}
+          plantNameLatin={plantDetail.data.plantNameLatin}
+        />
       </div>
       <div className="image-carousel p-3">
-        <Carousel />
+        <Carousel imageData={plantDetail.data.slices[0].items} />
       </div>
+      <div className="w-full pl-3 mb-3 text-sm">
+        Status Konservasi: {plantDetail.data.conservationStatus}
+      </div>
+
       <div className="plant-detail min-h-screen w-full rounded-tr-2xl rounded-tl-2xl bg-mutedgray-25 p-3">
         <div className="category-buttons w-full child:mx-1 flex justify-center">
           <MainButton
@@ -50,12 +59,7 @@ const DetailTanaman = ({ ...props }) => {
                 : "-left-[5555px] opacity-0 transition-all"
             )}
           >
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
-              odit delectus ullam reprehenderit placeat sapiente ex animi non
-              ea! Molestiae, quisquam non aspernatur minima iste illum id vitae
-              sed consequuntur?
-            </p>
+            <p>{plantDetail.data.usage[0].text}</p>
           </div>
           <div
             data-category="morfologi"
@@ -66,12 +70,7 @@ const DetailTanaman = ({ ...props }) => {
                 : "-left-[5555px] opacity-0 transition-all"
             )}
           >
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
-              odit delectus ullam reprehenderit placeat sapiente ex animi non
-              ea! Molestiae, quisquam non aspernatur minima iste illum id vitae
-              sed consequuntur?
-            </p>
+            <p>{plantDetail.data.morphology[0].text}</p>
           </div>
           <div
             data-category="persebaran"
@@ -82,12 +81,7 @@ const DetailTanaman = ({ ...props }) => {
                 : "-left-[5555px] opacity-0 transition-all"
             )}
           >
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
-              odit delectus ullam reprehenderit placeat sapiente ex animi non
-              ea! Molestiae, quisquam non aspernatur minima iste illum id vitae
-              sed consequuntur?
-            </p>
+            <p>{plantDetail.data.habitat[0].text}</p>
           </div>
         </div>
       </div>
@@ -96,3 +90,32 @@ const DetailTanaman = ({ ...props }) => {
 };
 
 export default DetailTanaman;
+
+export async function getStaticProps(context) {
+  const client = createClient();
+
+  const plantDetail = await client.getByUID("plantdata", context.params.uid);
+
+  return {
+    props: { plantDetail },
+  };
+}
+
+export async function getStaticPaths(context) {
+  // Client used to fetch CMS content.
+  const client = createClient();
+
+  // Page document for our homepage from the CMS.
+  const plantDetail = await client.getAllByType("plantdata");
+
+  const paths = plantDetail.map((plant) => ({
+    params: {
+      uid: plant.uid,
+    },
+  }));
+
+  return {
+    paths,
+    fallback: false,
+  };
+}

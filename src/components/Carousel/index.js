@@ -18,15 +18,13 @@ const Carousel = ({ imageData, ...props }) => {
         loop={true}
         className="h-full aspect-[3/2]"
       >
-        <SwiperSlide>
-          <CarouselItem />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CarouselItem />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CarouselItem />
-        </SwiperSlide>
+        {imageData.map((image, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <CarouselItem alt={image.Image.alt} src={image.Image.url} />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </div>
   );

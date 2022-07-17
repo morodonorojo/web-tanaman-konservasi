@@ -8,10 +8,6 @@ import HamburgerMenu from "../../../assets/icon/hamburger-menu.svg";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  useEffect(() => {
-    console.log(isMenuOpen);
-  }, [isMenuOpen]);
-
   return (
     <nav className="sticky top-0 z-50 flex h-14 w-full flex-row items-center justify-between bg-beachbrown-900 p-3 drop-shadow-lg">
       <Link href="/" passHref>
