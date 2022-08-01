@@ -23,7 +23,7 @@ export default function Home({ vegetationRole, plantData }) {
 
       <section className="w-full p-3">
         <h1 className="mx-auto mb-4 max-w-sm text-center text-3xl font-semibold text-forestgreen-900">
-          Tanaman Konservasi di Pantai Ngiroboyo
+          Tanaman Konservasi di Desa Sendang dan Kalak
         </h1>
         <div className="plant-list flex [&_.swiper-wrapper]:mb-10">
           <Swiper
